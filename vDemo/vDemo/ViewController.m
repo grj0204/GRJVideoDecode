@@ -30,7 +30,7 @@
     _glLayer = [[AAPLEAGLLayer alloc] initWithFrame:self.view.bounds];
     [self.view.layer addSublayer:_glLayer];
     self.label = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 200, 30)];
-    self.label.text = @"请连接设备...";
+    self.label.text = @"请连接设备....";
     [self.view addSubview:self.label];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(accessoryDidConnect:) name:EAAccessoryDidConnectNotification object:nil];
