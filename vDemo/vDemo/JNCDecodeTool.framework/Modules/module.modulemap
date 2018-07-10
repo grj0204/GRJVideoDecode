@@ -1,0 +1,6 @@
+framework module JNCDecodeTool {
+  umbrella header "JNCDecodeTool.h"
+
+  export *
+  module * { export * }
+}
