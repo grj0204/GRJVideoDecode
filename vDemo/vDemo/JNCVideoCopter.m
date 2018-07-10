@@ -71,7 +71,7 @@ static uint8_t videoBuf[USB_INPUT_BUFFER_SIZE];
     _accessory = accessory;
     NSArray *protocolsArray = [_accessory protocolStrings];
     for (NSString *item in protocolsArray) {
-        if ([item isEqualToString:@"com.joynice.video"]) {
+        if ([item isEqualToString:@"com.xxxxx.video"]) {
             _videoProtocol = item;
         }
     }
