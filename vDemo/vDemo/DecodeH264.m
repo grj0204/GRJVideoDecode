@@ -189,16 +189,6 @@ static void didDecompress( void *decompressionOutputRefCon, void *sourceFrameRef
         }
             break;
     }
-    
-//    if (pixelBuffer) {
-//        CIImage *cilmage = [CIImage imageWithCVPixelBuffer:pixelBuffer];
-//        UIImage *uiImage = [UIImage imageWithCIImage:cilmage];
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            if ([self.delegate respondsToSelector:@selector(displayImage:)]) {
-//                [self.delegate displayImage:uiImage];
-//            }
-//        });
-//    }
 
         if (pixelBuffer) {
             dispatch_async(dispatch_get_main_queue(), ^{
